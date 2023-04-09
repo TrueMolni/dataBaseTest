@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
-const password = "4XViTn9csmAdhbvo";
-
-const DB_HOST =
-  "mongodb+srv://Molni:4XViTn9csmAdhbvo@molni.kjubpv6.mongodb.net/contacts_reader?retryWrites=true&w=majority";
 
 const app = require("./app");
+const { DB_HOST } = require("./config");
 
 mongoose
   .connect(DB_HOST)
